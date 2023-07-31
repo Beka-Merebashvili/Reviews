@@ -10,6 +10,9 @@ const Globalstyles = createGlobalStyle`
 }
 body {
     background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 `
 
