@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import people from "../data";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Heading from "./Heading";
 
 export default function Review() {
   const [index, setIndex] = useState(0);
@@ -38,10 +39,8 @@ export default function Review() {
 
   return (
     <Container className="review">
+    <Heading />
         <img src={image} alt={name}  />
-        {/* <span className="quote-icon">
-          <FaQuoteRight />
-        </span> */}
       <h4>{name}</h4>
       <p className="job">{job}</p>
       <p className="info">{text}</p>
@@ -63,11 +62,14 @@ export default function Review() {
 const Container = styled.div`
   width: 340px;
   height: 500px;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
+  box-shadow: 1px 1px 10px #575757;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  margin-top: 100px;
   img {
     width: 200px;
     height: 200px;
@@ -90,5 +92,17 @@ const Container = styled.div`
     width: 320px;
     text-align: center;
     margin: 10px;
+  }
+  .button-container {
+    margin-bottom: 10px;
+  }
+  .prev-btn , .next-btn {
+     color: #15828b;
+  }
+  .random-btn {
+    padding: 8px;
+    color: #b1aeae;
+    background-color: #184146;
+    border: none;
   }
 `;

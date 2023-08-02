@@ -1,15 +1,14 @@
-import Globalstyles from "./assets/styled-componetns/GlobalStyles"
-import Review from "./assets/components/Review"
+import Globalstyles from "./assets/styled-componetns/GlobalStyles";
+import Review from "./assets/components/Review";
+
 
 function App() {
-   
-
   return (
     <>
-    <Globalstyles />
-    <Review />
+      <Globalstyles />
+      <Review />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
