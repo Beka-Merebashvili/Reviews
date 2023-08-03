@@ -98,11 +98,17 @@ const Container = styled.div`
   }
   .prev-btn , .next-btn {
      color: #15828b;
+     cursor: pointer;
   }
   .random-btn {
     padding: 8px;
-    color: #b1aeae;
+    color: #c0bebe;
     background-color: #184146;
     border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #1d4e55;
+      transition: 0.3s;
+    }
   }
 `;
